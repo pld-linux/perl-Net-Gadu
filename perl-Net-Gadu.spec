@@ -1,10 +1,15 @@
+#
+# Conditional build:
+%bcond_with	tests	# perform "make test" (uses network!)
+#
 %include	/usr/lib/rpm/macros.perl
 Summary:	Net::Gadu Perl module - interface for libgadu.so library
 Summary(pl):	Modu³ Perla Net::Gadu - interfejs do biblioteki libgadu.so
 Name:		perl-Net-Gadu
 Version:	0.9
 Release:	4
-License:	GPL
+# not mentioned, irssi_gg.pl is Public Domain
+License:	unknown
 Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
 Source0:	http://krzak.linux.net.pl/perl/Net-Gadu-%{version}.tar.gz
@@ -30,12 +35,16 @@ ktora jest czê¶ci± projektu Ekg (http://dev.null.pl/ekg/).
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 install ex/ex1 example.pl
 
