@@ -2,7 +2,7 @@
 Summary:	Net::Gadu module - interface for libgadu.so library
 Summary(pl):	Modu³ Net::Gadu - interfejs do biblioteki libgadu.so
 Name:		perl-Net-Gadu
-Version:	0.5.1
+Version:	0.7
 Release:	1	
 License:	GPL
 Group:		Development/Languages/Perl
@@ -24,7 +24,7 @@ bazuj±cej na protokole Gadu-Gadu. Wykorzystuje biblioteke libgadu.so
 ktora jest czescia projektu Ekg (http://dev.null.pl/ekg/).
 
 %prep
-%setup -q -n Net-Gadu-0.5.1
+%setup -q -n Net-Gadu-%{version}
 
 %build
 perl Makefile.PL
@@ -46,4 +46,4 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitearch}/auto/Net/Gadu/*
 %{perl_sitearch}/Net/Gadu.pm
 %{_mandir}/man3/Net::Gadu.3pm.gz
-%doc Changes README example.pl
+%doc Changes README example.pl contrib
