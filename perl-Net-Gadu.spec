@@ -29,7 +29,7 @@ ktora jest czê¶ci± projektu Ekg (http://dev.null.pl/ekg/).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
