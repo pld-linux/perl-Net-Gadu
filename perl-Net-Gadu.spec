@@ -9,7 +9,7 @@ Group:		Development/Languages/Perl
 Source0:	http://krzak.linux.net.pl/perl/Net-Gadu-%{version}.tar.gz
 URL:		http://krzak.linux.net.pl/perl/perlgadu.html
 BuildRequires:	perl >= 5.6.1
-BuildRequires:	libgadu-devel >= 0.9.0.20020605
+BuildRequires:	libgadu-devel >= 20020605
 Requires:	libgadu
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
