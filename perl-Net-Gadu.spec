@@ -8,6 +8,7 @@ License:	GPL
 Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
 Source0:	http://krzak.linux.net.pl/perl/Net-Gadu-%{version}.tar.gz
+# Source0-md5:	fab8dd4f0441794181eb0dad7c9ede8e
 URL:		http://krzak.linux.net.pl/perl/perlgadu.html
 BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	libgadu-devel >= 1:20020807
