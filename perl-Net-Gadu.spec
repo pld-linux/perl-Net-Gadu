@@ -34,7 +34,7 @@ perl Makefile.PL
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/doc
+
 install ex/ex1 example.pl
 
 %clean
@@ -42,8 +42,8 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc Changes README example.pl contrib
 %dir %{perl_sitearch}/auto/Net/Gadu
 %{perl_sitearch}/auto/Net/Gadu/*
 %{perl_sitearch}/Net/Gadu.pm
-%{_mandir}/man3/Net::Gadu.3pm.gz
-%doc Changes README example.pl contrib
+%{_mandir}/man3/Net::Gadu.3pm*
