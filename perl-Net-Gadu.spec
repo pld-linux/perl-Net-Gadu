@@ -19,8 +19,8 @@ of Ekg project - http://dev.null.pl/ekg/).
 
 %description -l pl
 Modu³ Net::Gadu pozwala na zastosowanie w swoich skryptach komunikacji
-bazuj±cej na protokole Gadu-Gadu. Wykorzystuje biblioteke libgadu.so
-ktora jest czescia projektu Ekg (http://dev.null.pl/ekg/).
+bazuj±cej na protokole Gadu-Gadu. Wykorzystuje bibliotekê libgadu.so,
+ktora jest czê¶ci± projektu Ekg (http://dev.null.pl/ekg/).
 
 %prep
 %setup -q -n Net-Gadu-%{version}
