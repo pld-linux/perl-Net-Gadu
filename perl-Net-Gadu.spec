@@ -27,7 +27,7 @@ ktora jest czê¶ci± projektu Ekg (http://dev.null.pl/ekg/).
 %setup -q -n Net-Gadu-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
