@@ -3,14 +3,13 @@ Summary:	Net::Gadu module - interface for libgadu.so library
 Summary(pl):	Modu³ Net::Gadu - interfejs do biblioteki libgadu.so
 Name:		perl-Net-Gadu
 Version:	0.8
-Release:	1	
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://krzak.linux.net.pl/perl/Net-Gadu-%{version}.tar.gz
 URL:		http://krzak.linux.net.pl/perl/perlgadu.html
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	libgadu-devel >= 20020605
-Requires:	libgadu
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,6 +43,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README example.pl contrib
 %dir %{perl_sitearch}/auto/Net/Gadu
-%{perl_sitearch}/auto/Net/Gadu/*
+%{perl_sitearch}/auto/Net/Gadu/autosplit.ix
+%{perl_sitearch}/auto/Net/Gadu/Gadu.bs
+%attr(755,root,root) %{perl_sitearch}/auto/Net/Gadu/Gadu.so
 %{perl_sitearch}/Net/Gadu.pm
 %{_mandir}/man3/Net::Gadu.3pm*
