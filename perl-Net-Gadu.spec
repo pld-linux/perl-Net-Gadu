@@ -11,8 +11,6 @@ URL:		http://krzak.linux.net.pl/perl/perlgadu.html
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	libgadu-devel >= 20020807
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-# have to be rebuild if you want to use it with perl >= 5.8 because of .xs
-Conflicts:	perl >= 5.8
 
 %description
 Net::Gadu module is intended to make it easy to add Gadu-Gadu
