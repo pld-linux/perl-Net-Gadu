@@ -8,8 +8,8 @@ Summary(pl):	Modu³ Perla Net::Gadu - interfejs do biblioteki libgadu.so
 Name:		perl-Net-Gadu
 Version:	0.9
 Release:	4
-# not mentioned, irssi_gg.pl is Public Domain
-License:	unknown
+# not mentioned in package, confirmed on IRC
+License:	GPL
 Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
 Source0:	http://krzak.linux.net.pl/perl/Net-Gadu-%{version}.tar.gz
