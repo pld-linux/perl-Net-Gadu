@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	Net::Gadu module - interface for libgadu.so library
-Summary(pl):	Modu³ Net::Gadu - interfejs do biblioteki libgadu.so
+Summary:	Net::Gadu Perl module - interface for libgadu.so library
+Summary(pl):	Modu³ Perla Net::Gadu - interfejs do biblioteki libgadu.so
 Name:		perl-Net-Gadu
 Version:	0.9
 Release:	4
