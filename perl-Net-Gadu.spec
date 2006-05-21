@@ -11,9 +11,9 @@ Release:	1
 License:	LGPL
 Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
-Source0:	http://krzak.linux.net.pl/perl/Net-Gadu-%{version}.tar.gz
+Source0:	http://www.hakore.com/perl/Net-Gadu-%{version}.tar.gz
 # Source0-md5:	d6ce1c16095f79e1050491193f8556f2
-URL:		http://krzak.linux.net.pl/perl/perlgadu.html
+URL:		http://www.hakore.com/perl/perlgadu.html
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	libgadu-devel >= 1:20020807
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
