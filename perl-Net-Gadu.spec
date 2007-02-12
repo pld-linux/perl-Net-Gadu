@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 Summary:	Net::Gadu Perl module - interface for libgadu.so library
-Summary(pl):	Modu³ Perla Net::Gadu - interfejs do biblioteki libgadu.so
+Summary(pl.UTF-8):   ModuÅ‚ Perla Net::Gadu - interfejs do biblioteki libgadu.so
 Name:		perl-Net-Gadu
 Version:	1.5
 Release:	1
@@ -23,10 +23,10 @@ Net::Gadu module is intended to make it easy to add Gadu-Gadu
 communication support to your scripts. It uses libgadu library (a part
 of Ekg project - http://dev.null.pl/ekg/).
 
-%description -l pl
-Modu³ Net::Gadu pozwala na zastosowanie w swoich skryptach komunikacji
-bazuj±cej na protokole Gadu-Gadu. Wykorzystuje bibliotekê libgadu.so,
-ktora jest czê¶ci± projektu Ekg (http://dev.null.pl/ekg/).
+%description -l pl.UTF-8
+ModuÅ‚ Net::Gadu pozwala na zastosowanie w swoich skryptach komunikacji
+bazujÄ…cej na protokole Gadu-Gadu. Wykorzystuje bibliotekÄ™ libgadu.so,
+ktora jest czÄ™Å›ciÄ… projektu Ekg (http://dev.null.pl/ekg/).
 
 %prep
 %setup -q -n Net-Gadu-%{version}
