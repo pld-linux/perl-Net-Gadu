@@ -9,13 +9,13 @@ Name:		perl-Net-Gadu
 Version:	1.9
 Release:	2
 License:	LGPL
-Vendor:		Marcin Krzyzanowski
 Group:		Development/Languages/Perl
 Source0:	http://www.hakore.com/perl/Net-Gadu-%{version}.tar.gz
 # Source0-md5:	22e934da730031dac40fc57b0195319c
 URL:		http://www.hakore.com/perl/perlgadu.html
-BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	libgadu-devel >= 1:20020807
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
