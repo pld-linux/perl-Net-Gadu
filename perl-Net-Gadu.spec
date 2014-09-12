@@ -56,7 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README example.pl contrib
 %dir %{perl_vendorarch}/auto/Net/Gadu
 %{perl_vendorarch}/auto/Net/Gadu/autosplit.ix
-%{perl_vendorarch}/auto/Net/Gadu/Gadu.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Net/Gadu/Gadu.so
 %{perl_vendorarch}/Net/Gadu.pm
 %{_mandir}/man3/Net::Gadu.3pm*
