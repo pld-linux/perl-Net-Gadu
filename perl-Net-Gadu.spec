@@ -6,7 +6,7 @@ Summary:	Net::Gadu Perl module - interface for libgadu.so library
 Summary(pl.UTF-8):	Moduł Perla Net::Gadu - interfejs do biblioteki libgadu.so
 Name:		perl-Net-Gadu
 Version:	1.9
-Release:	17
+Release:	18
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://www.hakore.com/perl/Net-Gadu-%{version}.tar.gz
